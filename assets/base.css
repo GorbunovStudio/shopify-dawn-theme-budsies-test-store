@@ -3595,3 +3595,24 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.price {
+  .price__regular {
+    font-weight: 800;
+    color: #43c5e4;
+  }
+  .price__sale {
+    font-weight: 800;
+  }
+  .price__sale .price-item--sale {
+    color: #43c5e4;
+  }
+  .price__sale .price-item--regular {
+    font-style: italic;
+    color: #f78f9e;
+  }
+}
+
+.button--primary {
+  text-transform: uppercase;
+}

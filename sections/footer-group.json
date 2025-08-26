@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,43 +14,46 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "image_UQGhGe": {
+          "type": "image",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "image": "shopify://shop_images/organization-logo_e92e92e1-bb93-4285-b8bf-487b40f363ad.png",
+            "image_width": 100,
+            "alignment": "center"
           }
         },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
+        "text_4hUDhH": {
           "type": "text",
+          "name": "Footer Slogan",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "",
+            "subtext": "<p>Handmade pet keepsakes</p>"
+          }
+        },
+        "link_list_fEHQdh": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "image_UQGhGe",
+        "text_4hUDhH",
+        "link_list_fEHQdh"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-8464d75b-c1e6-4249-95a5-23038e72e598",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "GET MORE @PETSIES CUTENESS",
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 100,
         "padding_top": 36,
         "padding_bottom": 36
       }

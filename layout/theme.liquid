@@ -1,6 +1,53 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_300.woff?v=1755261047" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_500.woff?v=1755261056" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_800.woff?v=1755261066" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Roselina-Script.woff?v=1755599548" as="font" type="font/woff" crossorigin>
+    <style>
+      @font-face {
+        font-family: 'Avenir';
+        src: url('https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_300.woff?v=1755261047') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Avenir';
+        src: url('https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_500.woff?v=1755261056') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        src: url('https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Avenir_800.woff?v=1755261066') format('woff');
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Roselina';
+        src: url('https://cdn.shopify.com/s/files/1/0584/5241/0417/files/Roselina-Script.woff?v=1755599548') format('woff');
+        font-weight: 300;
+        font-style: cursive;
+        font-display: swap;
+      }
+      h1, h2, h3, h4, h5, h6,
+      p, span, div, ul, ol, li, a, 
+      button, input, select, option, 
+      label, legend, textarea, small {
+        font-family: 'Avenir', sans-serif;
+      }
+      body {
+        font-weight: 300;
+      }
+      h1, h3, h4, h5, h6, button {
+        font-weight: 500;
+      }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
