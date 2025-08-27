@@ -45,8 +45,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/hero.webp",
-        "image_2": "shopify://shop_images/hero_mobile.webp",
+        "image": "shopify://shop_images/desktop-homepage-hero-images-hp.png",
+        "image_2": "shopify://shop_images/homepage-hero-images-mobile-hp.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
