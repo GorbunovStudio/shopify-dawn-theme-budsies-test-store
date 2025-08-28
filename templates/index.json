@@ -46,7 +46,7 @@
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/desktop-homepage-hero-images-hp.png",
-        "image_2": "shopify://shop_images/homepage-hero-images-mobile-hp.png",
+        "image_2": "shopify://shop_images/homepage-hero-images-mobile-hp_34dffdc3-1e63-4cd7-9ff9-1ca7cfcc2b11.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
@@ -61,10 +61,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [
-        ".price {font-weight: 800;}",
-        ".card__badge {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "collection": "frontpage",
         "products_to_show": 8,
