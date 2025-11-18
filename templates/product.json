@@ -115,6 +115,11 @@
     },
     "fera-product-reviews": {
       "type": "fera-product-reviews",
+      "custom_css": [
+        ".fera-productReviews-widget .fera-review .fera-review-body {font-weight: 300;}",
+        ".fera-productReviews-widget {--review-summary-font-weight: 400;}",
+        ".fera-productReviews-widget .fera-review .fera-customer-display-name-text {font-weight: 400;}"
+      ],
       "settings": {
         "widget_type": "product_reviews",
         "product_id": "{{ product.metafields.custom.review_product_id.value }}"
