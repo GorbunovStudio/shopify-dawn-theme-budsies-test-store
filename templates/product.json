@@ -85,6 +85,16 @@
         "padding_bottom": 12
       }
     },
+    "custom_liquid_i7ma8N": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"petsies-reviews page-width\">\n\n<h2 class=\"rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in scroll-trigger--design-mode\" data-shopify-editor-block=\"{&quot;id&quot;:&quot;template--15369093611569__rich_text_yWy9cp__heading_M7D6C8&quot;,&quot;domId&quot;:&quot;heading_M7D6C8&quot;,&quot;type&quot;:&quot;heading&quot;}\" data-cascade=\"\" style=\"--animation-order: 1;\" data-live-text-setting=\"template--15369093611569__rich_text_yWy9cp__heading_M7D6C8.heading\">\n                Petsies Customer Reviews & Testimonials\n              </h2>\n\n <!-- Place <div> tag where you want the feed to appear -->\n<div id=\"curator-feed-petsies-dog-layout\"><a href=\"https://curator.io\" target=\"_blank\" class=\"crt-logo crt-tag\">Powered by Curator.io</a></div>\n\n<!-- The Javascript can be moved to the end of the html page before the </body> tag -->\n<script type=\"text/javascript\">\n/* curator-feed-petsies-dog-layout */\n(function(){\nvar i,e,d=document,s=\"script\";i=d.createElement(\"script\");i.async=1;i.charset=\"UTF-8\";\ni.src=\"https://cdn.curator.io/published/9d0d9687-59c4-4049-9a07-e29f67412249.js\";\ne=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);\n})();\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -106,6 +116,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_i7ma8N",
     "related-products"
   ]
 }
