@@ -27,6 +27,13 @@
           "type": "price",
           "settings": {}
         },
+        "fera_product_rating_GjqfUw": {
+          "type": "fera_product_rating",
+          "settings": {
+            "widget_type": "product_detail_rating",
+            "product_id": "{{ product.metafields.custom.review_product_id.value }}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -64,6 +71,7 @@
         "vendor",
         "title",
         "price",
+        "fera_product_rating_GjqfUw",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -100,6 +108,13 @@
         "padding_bottom": 52
       }
     },
+    "fera-product-reviews": {
+      "type": "fera-product-reviews",
+      "settings": {
+        "widget_type": "product_reviews",
+        "product_id": "{{ product.metafields.custom.review_product_id.value }}"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -122,6 +137,7 @@
   "order": [
     "main",
     "custom_liquid_i7ma8N",
+    "fera-product-reviews",
     "related-products"
   ]
 }

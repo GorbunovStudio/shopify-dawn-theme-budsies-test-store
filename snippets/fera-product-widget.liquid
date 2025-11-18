@@ -1,0 +1,10 @@
+{% if widget_type == blank or product_id == blank %}
+  {% comment %}Fera widget not rendered: missing widget_type or product_id.{% endcomment %}
+{% else %}
+  <div class="fera-product-reviews-container">
+    <div
+      data-fera-widget="{{ widget_type }}"
+      data-product-id="{{ product_id }}"
+    ></div>
+  </div>
+{% endif %}

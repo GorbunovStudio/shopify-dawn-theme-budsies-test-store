@@ -1,0 +1,38 @@
+<section class="section section-fera-product-reviews">
+  {% if settings.fera_enable and settings.fera_public_api_key != blank and template.name == 'product' and product %}
+    {%- liquid
+      assign fera_product_id = section.settings.product_id
+    -%}
+    {%- if fera_product_id != blank -%}
+      {% render 'fera-product-widget', widget_type: section.settings.widget_type, product_id: fera_product_id %}
+    {%- endif -%}
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Fera product reviews",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "widget_type",
+      "label": "Widget type",
+      "default": "product_reviews",
+      "options": [
+        { "value": "product_reviews", "label": "Product reviews" },
+        { "value": "product_media_gallery", "label": "Product media gallery" },
+        { "value": "product_detail_rating", "label": "Product detail rating" },
+        { "value": "product_collection_rating", "label": "Product collection rating" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "product_id",
+      "label": "Fera product ID",
+      "info": "Connect a dynamic source (e.g. metafield)."
+    }
+  ]
+}
+{% endschema %}

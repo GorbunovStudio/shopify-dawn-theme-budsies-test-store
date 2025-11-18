@@ -1451,5 +1451,21 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Fera",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "fera_enable",
+        "label": "Enable Fera reviews",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "fera_public_api_key",
+        "label": "Fera public API key"
+      }
+    ]
   }
 ]

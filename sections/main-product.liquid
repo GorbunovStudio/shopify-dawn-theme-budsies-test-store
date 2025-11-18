@@ -525,6 +525,15 @@
                     </p>
                   </div>
                 {%- endif -%}
+              {%- when 'fera_product_rating' -%}
+                {%- liquid
+                  assign fera_product_id = block.settings.product_id
+                -%}
+                {%- if fera_product_id != blank -%}
+                  <div class="product__fera-rating" {{ block.shopify_attributes }}>
+                    {% render 'fera-product-widget', widget_type: block.settings.widget_type, product_id: fera_product_id %}
+                  </div>
+                {%- endif -%}
               {%- when 'complementary' -%}
                 <product-recommendations
                   class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
@@ -1191,6 +1200,29 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "fera_product_rating",
+      "name": "Fera product rating",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "widget_type",
+          "label": "Widget type",
+          "default": "product_detail_rating",
+          "options": [
+            { "value": "product_detail_rating", "label": "Product detail rating" },
+            { "value": "product_collection_rating", "label": "Product collection rating" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "product_id",
+          "label": "Fera product ID",
+          "info": "Connect a dynamic source (e.g. metafield) or enter a fallback product ID."
         }
       ]
     },
