@@ -58,7 +58,12 @@
         },
         "driver_image_banner": {
           "type": "driver_image",
-          "settings": {}
+          "settings": {
+            "image_desktop": "shopify://shop_images/Shopify_Mobile_Banner_V2.png",
+            "link_url": "https://www.mypetsies.com/",
+            "open_in_new_tab": true,
+            "image_alt": ""
+          }
         },
         "share": {
           "type": "share",
