@@ -199,6 +199,16 @@ product-info {
   opacity: 0.5;
 }
 
+.product__driver-image {
+  margin-top: 1.5rem;
+}
+
+.product__driver-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (forced-colors: active) {
   .product-form__submit[aria-disabled='true'] {
     color: Window;

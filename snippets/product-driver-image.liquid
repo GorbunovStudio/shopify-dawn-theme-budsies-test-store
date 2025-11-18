@@ -1,0 +1,45 @@
+{% assign image_desktop = block.settings.image_desktop %}
+{% assign image_mobile = block.settings.image_mobile %}
+{% assign link_url = block.settings.link_url %}
+
+{% if link_url == blank %}
+  {% assign has_link = false %}
+{% else %}
+  {% assign has_link = true %}
+{% endif %}
+
+{% if image_desktop == blank and image_mobile == blank %}
+  {% assign has_image = false %}
+{% else %}
+  {% assign has_image = true %}
+{% endif %}
+
+{% if has_link and has_image %}
+  <div class="product__driver-image">
+    <a
+      href="{{ link_url }}"
+      {% if block.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}
+    >
+      {% if image_desktop != blank and image_mobile != blank %}
+        <picture>
+          <source
+            media="(min-width: 750px)"
+            srcset="{{ image_desktop | image_url }}"
+          >
+          <img
+            src="{{ image_mobile | image_url }}"
+            alt="{{ block.settings.image_alt | escape }}"
+            loading="lazy"
+          >
+        </picture>
+      {% else %}
+        {% assign fallback_image = image_mobile | default: image_desktop %}
+        <img
+          src="{{ fallback_image | image_url }}"
+          alt="{{ block.settings.image_alt | escape }}"
+          loading="lazy"
+        >
+      {% endif %}
+    </a>
+  </div>
+{% endif %}
